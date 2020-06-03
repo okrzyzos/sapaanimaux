@@ -1,0 +1,44 @@
+START TRANSACTION;
+DROP DATABASE IF EXISTS SPA_Animaux;
+CREATE DATABASE SPA_Animaux;
+USE  SPA_Animaux;
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `prenom` VARCHAR(255) NOT NULL,
+    `age` INT(11) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `date_added` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `date_update` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `date_delete` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `is_active` BOOLEAN ,
+    PRIMARY KEY (`id`)
+)ENGINE=innoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit;
